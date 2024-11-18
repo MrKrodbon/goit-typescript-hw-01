@@ -3,7 +3,10 @@ type Page = {
     likes: number,
     accounts: [],
     status: string,
-    details?:object,
+    details?:{
+      createAt: string,
+      updateAt: string,
+    },
 }
 
 const page1 = {

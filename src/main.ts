@@ -14,5 +14,3 @@ import  merge  from './generics/3';
 import  createOrUpdateUser  from './generics/4';
 import RoleDescription from './generics/5';
 import { params } from './generics/6'
-
-
