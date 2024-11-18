@@ -3,17 +3,15 @@ type User = {
   surname: string;
   email: string;
   password: string;
+};
+
+function createOrUpdateUser(initialValues: Partial<User>) {
+  // Оновлення користувача
 }
 
-function createOrUpdateUser(initialValues:Partial<User>):User {
-    const defaultUser : User = {
-        name:'',
-        surname: '',
-        email: '',
-        password: '',
-    }
+createOrUpdateUser({
+  email: "user@mail.com",
+  password: "password123",
+});
 
-    return { ...defaultUser, ...initialValues };
-}
-
-export default createOrUpdateUser ;
+export default createOrUpdateUser;
